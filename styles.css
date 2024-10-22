@@ -1,0 +1,87 @@
+/* Ensure the body and HTML can expand to full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Flex container */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 20px auto; /* Margin to make the container scrollable */
+}
+
+/* Allow the page to scroll if content overflows */
+body {
+    overflow-y: auto; /* Ensure body can scroll */
+}
+
+/* Styling for header */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Ensure the output div has max height and can scroll */
+#output {
+    max-height: 300px; /* Max height of results div */
+    overflow-y: auto;  /* Allow vertical scrolling within results */
+    margin-top: 20px;
+    font-family: monospace;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
